@@ -47,6 +47,7 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 import json
+from summit.utils.dataset import DataSet
 
 ureg = UnitRegistry()
 
@@ -72,10 +73,10 @@ def main(
         df_rxn_data.progress_apply(inner_loop, axis=1, args=(df_stock_solutions,))
     )
     for i, reaction in enumerate(reactions):
-        reaction.reaction_id = df_rxn.iloc[i]["Overall "]
+        reaction.reaction_id = df_rxn_data.iloc[i]["Overall number"]
 
     # Create dataset
-    dataset = Dataset()
+    dataset = DataSet()
     dataset.name = "Baumgartner C-N Cross-Coupling"
     dataset.reactions.extend(reactions)
     dataset.dataset_id = str(1)
