@@ -1,5 +1,5 @@
 # mtbo-thesis
-Initially forked from an older version of sre/multitask, this repo contains all the code used to generate the plots used in the MTBO chapter of my thesis.
+Initially forked from an older version of sre/multitask, this repo contains all the code used to generate the plots used in the MTBO chapter of my thesis. I just used a pre-existing env I had, I didn't try using setup.py/poetry for creating the env.
 
 # Multitask 
 
