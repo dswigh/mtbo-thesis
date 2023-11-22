@@ -1,4 +1,4 @@
-# mtbo-thesis
+# Multi-task Bayesian optimisation
 
 This repository contains all the code necessary to reproduce the results presented in the Multi-task Bayesaion optimisation chapter of my thesis.
 
